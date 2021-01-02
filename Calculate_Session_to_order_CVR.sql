@@ -16,7 +16,7 @@ SELECT
     a.http_referer
 FROM
     website_sessions a
-        LEFT JOIN
+LEFT JOIN
     orders b ON a.website_session_id = b.website_session_id
 WHERE
     a.created_at < '2012-04-14'
